@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.user-profile-card{
+    max-width: 300px;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: repeat(6, 1fr); */
+    margin: 0 auto;
+    padding: 20px;
+    color: hsl(var(--textColor));
+}
+.card{
+    border: 1px solid hsl(0,0%, 81%);
+    border-radius: 8px;
+    padding: 20px 30px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* position: relative; */
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.card > img{
+    justify-items: flex-start;
+}
+.profile-header{
+    /* position: relative; */
+    display: flex;
+    margin: 0;
+}
+.sub-head{
+    font-size: 14px;
+    margin-left: 10px;
+    line-height: .9rem;
+    /* text-align: left; */
+}
+
+.profile-pic{
+    align-self:end;
+    width: 40px;
+    height: 40px;
+    border: 2px solid hsl(263, 59%, 72%);
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* ### Primary
+
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%) */
+
+h2{
+    margin: 8px 0;
+    font-size: 1.3em;
+    /* color: hsl(210, 46%, 95%);  */
+}
+
+.card h3{
+    margin: 4px 0;
+    font-size: .9em;
+    /* color: hsl(0, 0%, 81%); */
+    opacity: 50%;
+}
+h4{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+p{  
+    margin: 0px 0px;
+    padding: 0px 20px 0px 0px;
+    font-size: 13px;
+    opacity: 70%;
+}
+
+.card-with-background{
+    background-size: cover;
+    background-position: top;
+}
+
