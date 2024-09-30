@@ -2,16 +2,19 @@
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
 }
 
 .user-profile-card{
-    max-width: 300px;
+    max-width: 375px;
     /* display: grid; */
     /* grid-template-columns: 1fr; */
     /* grid-template-rows: repeat(6, 1fr); */
     margin: 0 auto;
-    padding: 20px;
-    color: hsl(var(--textColor));
+    padding: 10px;
+}
+.card > *{
+    margin: 10px;
 }
 .card{
     border: 1px solid hsl(0,0%, 81%);

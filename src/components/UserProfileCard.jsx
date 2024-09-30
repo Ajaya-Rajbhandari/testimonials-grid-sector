@@ -33,7 +33,7 @@ const UserProfileCard = ({
     backgroundPositionX : '170px', 
   };
   return (
-    <div className={`user-profile-card text-{textColor}`}>
+    <div className={`user-profile-card `}>
       <div className="card" style={cardStyle }>
         <div className="profile-header">
           <img
