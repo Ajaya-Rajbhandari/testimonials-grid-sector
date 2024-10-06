@@ -24,16 +24,16 @@ const UserProfileCard = ({
 
   const {backgroundColor, h2Color, h3Color, h4Color, pColor} = cardConfig[cardId];
 
-  const cardStyle = {
-    backgroundColor: backgroundColor || "white",
-    backgroundImage: backgroundImage ? `url(${backgroundImage})` : "none",
-    backgroundSize: "auto",
-    backgroundPosition: "top ",
-    backgroundRepeat: 'no-repeat',
-    backgroundPositionX : '170px', 
-  };
+const cardStyle = {
+  backgroundColor: backgroundColor || "white",
+  backgroundImage: backgroundImage ? `url(${backgroundImage})` : "none",
+  backgroundSize: 'auto',
+  backgroundPosition: 'calc(100% - 60px) top',
+  backgroundRepeat: 'no-repeat',
+  backgroundPositionX: 'right',
+};
   return (
-    <div className={`user-profile-card `}>
+    <div className={`user-profile-card ${cardId}`}>
       <div className="card" style={cardStyle }>
         <div className="profile-header">
           <img
